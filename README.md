@@ -1,1 +1,19 @@
+**Data Selection & Uploading:**  
+Initially, our team considered using e-commerce sales, Graduation, or Airline data. We selected the British Airways Reviews dataset from Kaggles since it met the needed requirements that included a minimum of 1000 values, categorical and numerical data, and potential dependent and independent variables. Link below:  
+
+https://www.kaggle.com/datasets/kappann/british-airways-reviews  
+ 
+Using the ‘File Upload’ feature on Google Collab to download and upload the CSV file and begin the code for this visualization. However, an important challenge we encountered while coding was ensuring that each team member downloaded the CSV file into their individual computers, rather than connecting the Google Collab to a file located within our Shared Drive. This distinction was crucial for us in terms of having proper execution of all the code within the file and accessing the dataset through the same pathway. Once we downloaded the data in this cohesive way, each member was able to collaborate in creating the structure for this visualization.  
+   
+**Data Cleaning:**  
+  
+The data cleaning process for our team involved first deleting any columns of data that did not benefit our intended analysis. These columns included the ‘Description’ and ‘Header’ columns, as it was not quantifiable data that had unmeasurable terms (i.e. Customer Comments, Verbal Recommendations, etc.). Continuing, we initiated our Imputation process by imputing ‘Unknown’ into all ‘Empty’ cells. After completing this process we identified other Columns that weren’t as valuable to work with since the majority were ‘Unknown’. These columns included ‘Food & Beverage’, ‘Wifi & Connectivity’, and ‘In-Flight Entertainment' columns that were all deleted from the data set. Lastly, we edited the Column 1 header from ‘Unknown’ to ‘Submission’ so it specified the data in that column and was labeled correctly.  
+
+**Data Visualization:**  
+  
+After cleaning the data, our team found the common theme between the remaining data was customer comfortability on their trip with British Airways. The main objective of this data visualization was to rank the comfortability of the airline for monetary benefit. Our visualizations included a Histogram for ‘Seat Comfort’  vs. ‘Cabin Staff Service’ since the data was quantitative and showed the distributions.  A problem we encountered when working with each histogram was correctly formatting the format of specific characters and symbols. To solve this issue, our team began using the encode() attribute to store these characters and symbols as strings. Next, we included a pie chart for the data with low cardinality to compare the ‘Seat Type’ vs. ‘Cabin Staff Service, as well as the ‘Overall Rating” of the trip. Initially defining the slices by color and connected value and their measurements(percentages), as well as standardizing a connected legend to these values. This was solved by the stars_sorted attribute, which designated the labels for the ratings to match with the total amount it was valued for. As well as creating the autopct attribute(autopct='%1.1f%%') to have the total amount of individual ratings calculated into a percentage amount from the total combined ratings. This attribute was able to round the percentages to the first decimal as well as label them with % signs to be more understanding for observers.  Lastly, the double bar chart was used for the categorical data that was analyzing the ‘Customers Recommendation’. This made it so we were able to see if seat comfort has a correlation to the enjoyableness of the flight. A challenge we had in creating our bar chart was separating out the data by class type as the data was coming from one column. We were able to solve this problem by using the group function to unstack the different groups in the column and order them from Economy Class up to First Class. 
+
+
+
+
 
